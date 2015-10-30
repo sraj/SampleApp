@@ -13,6 +13,13 @@
 		70E0C76F1BE3ED1D001E3C68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E0C76D1BE3ED1D001E3C68 /* Main.storyboard */; };
 		70E0C7711BE3ED1D001E3C68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E0C7701BE3ED1D001E3C68 /* Assets.xcassets */; };
 		70E0C7741BE3ED1D001E3C68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E0C7721BE3ED1D001E3C68 /* LaunchScreen.storyboard */; };
+		70E0C7D61BE3EE5A001E3C68 /* KiipSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E0C7B01BE3EE5A001E3C68 /* KiipSDK.framework */; settings = {ASSET_TAGS = (); }; };
+		70E0C7D71BE3EE5A001E3C68 /* KiipSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 70E0C7B11BE3EE5A001E3C68 /* KiipSDKResources.bundle */; settings = {ASSET_TAGS = (); }; };
+		70E0C7DA1BE3EFE3001E3C68 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E0C7D91BE3EFE3001E3C68 /* AdSupport.framework */; };
+		70E0C7DC1BE3EFEF001E3C68 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E0C7DB1BE3EFEF001E3C68 /* PassKit.framework */; };
+		70E0C7DE1BE3EFF9001E3C68 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E0C7DD1BE3EFF9001E3C68 /* CoreTelephony.framework */; };
+		70E0C7E01BE3F002001E3C68 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E0C7DF1BE3F002001E3C68 /* SystemConfiguration.framework */; };
+		70E0C7E21BE3F015001E3C68 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E0C7E11BE3F015001E3C68 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		70E0C7701BE3ED1D001E3C68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70E0C7731BE3ED1D001E3C68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70E0C7751BE3ED1D001E3C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E0C7B01BE3EE5A001E3C68 /* KiipSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KiipSDK.framework; sourceTree = "<group>"; };
+		70E0C7B11BE3EE5A001E3C68 /* KiipSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KiipSDKResources.bundle; sourceTree = "<group>"; };
+		70E0C7D91BE3EFE3001E3C68 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		70E0C7DB1BE3EFEF001E3C68 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		70E0C7DD1BE3EFF9001E3C68 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		70E0C7DF1BE3F002001E3C68 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		70E0C7E11BE3F015001E3C68 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E0C7E21BE3F015001E3C68 /* MediaPlayer.framework in Frameworks */,
+				70E0C7E01BE3F002001E3C68 /* SystemConfiguration.framework in Frameworks */,
+				70E0C7DE1BE3EFF9001E3C68 /* CoreTelephony.framework in Frameworks */,
+				70E0C7DC1BE3EFEF001E3C68 /* PassKit.framework in Frameworks */,
+				70E0C7DA1BE3EFE3001E3C68 /* AdSupport.framework in Frameworks */,
+				70E0C7D61BE3EE5A001E3C68 /* KiipSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +94,25 @@
 		70E0C7641BE3ED1D001E3C68 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70E0C7831BE3EE5A001E3C68 /* KiipSDK */,
+				70E0C7E11BE3F015001E3C68 /* MediaPlayer.framework */,
+				70E0C7DF1BE3F002001E3C68 /* SystemConfiguration.framework */,
+				70E0C7DD1BE3EFF9001E3C68 /* CoreTelephony.framework */,
+				70E0C7DB1BE3EFEF001E3C68 /* PassKit.framework */,
+				70E0C7D91BE3EFE3001E3C68 /* AdSupport.framework */,
 				70E0C7651BE3ED1D001E3C68 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70E0C7831BE3EE5A001E3C68 /* KiipSDK */ = {
+			isa = PBXGroup;
+			children = (
+				70E0C7B01BE3EE5A001E3C68 /* KiipSDK.framework */,
+				70E0C7B11BE3EE5A001E3C68 /* KiipSDKResources.bundle */,
+			);
+			name = KiipSDK;
+			path = ../KiipSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70E0C7741BE3ED1D001E3C68 /* LaunchScreen.storyboard in Resources */,
+				70E0C7D71BE3EE5A001E3C68 /* KiipSDKResources.bundle in Resources */,
 				70E0C7711BE3ED1D001E3C68 /* Assets.xcassets in Resources */,
 				70E0C76F1BE3ED1D001E3C68 /* Main.storyboard in Resources */,
 			);
@@ -261,6 +298,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KiipSDK",
+				);
 				INFOPLIST_FILE = SampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.SampleApp;
@@ -272,6 +313,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KiipSDK",
+				);
 				INFOPLIST_FILE = SampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kiip.SampleApp;

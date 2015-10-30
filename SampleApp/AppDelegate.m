@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#define KP_APP_KEY    @"<YOUR_APP_KEY>"
+#define KP_APP_SECRET @"<YOUR_APP_SECRET>"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +20,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    Kiip *kiip = [[Kiip alloc] initWithAppKey:KP_APP_KEY andSecret:KP_APP_SECRET];
+    [Kiip setSharedInstance:kiip];
+    [kiip setTestMode:YES];
+    
     return YES;
 }
 

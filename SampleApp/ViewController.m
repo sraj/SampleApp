@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <KiipSDK/KiipSDK.h>
 
 @interface ViewController ()
 
@@ -22,6 +23,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)momentTap:(id)sender {
+    [[Kiip sharedInstance] saveMoment:@"test" withCompletionHandler:nil];
 }
 
 @end
